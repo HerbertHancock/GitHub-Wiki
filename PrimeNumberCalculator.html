@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<h1>Prime Number Calculator</h1>
+
+<body>
+<p id="demo"></p>
+
+<script language="JavaScript">
+
+    
+function numberInput(){
+    document.write ("")
+}
+    
+//declaring the variables
+var theNumber = 0;
+var theFactor = 2;
+var theRemainder = 0;
+var output = "prime";
+    
+//collect user input
+theNumber = Number(prompt("Please input a number from 1 to 1,000 to determine if the number is prime or composit.",""));
+    
+//if prime or composite. I only need to test for one condition. because if it fails it must be the other. T or F?
+    
+
+    
+//generate a random number
+//theNumber = Math.ceil(Marth.random()*1000)
+//function to calculate if number is prime
+
+//function getNumber(){
+    //var theNumber = document.userInput.numb.value
+    
+
+//is the number prime or not? True or false?
+for ( theFactor = 2; theFactor < theNumber; theFactor++){
+    theRemainder = theNumber%theFactor;
+    numberInput()
+    if (theRemainder == 0){
+        output = "Composit"  //output=output+"" //not adding, appending to that string
+        break
+    }
+}
+
+//output the result of prime or not 
+document.getElementById('demo').innerHTML= "the" + theNumber + "whatever" + output  
+
+
+//draft of possible function    
+//function calculateprime(){
+ //return Math.ceil(Math.random()*1000);
+   //theRemainder = theNumber%theFactor
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+//document.getElementById('demo').innerHTML= "output"    
+</script>
+</body>
+</html>
