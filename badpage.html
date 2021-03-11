@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Calculator</title>
+<script language="JavaScript">
+
+
+function getSum(){
+var first = Number(document.theForm.elements[0].value);
+var second = Number(document.theForm.elements[1].value);
+var sum = first + second;
+document.getElementById("answer").innerHTML ="The answer is " + sum + " for addition." ;
+}
+
+function getDifference(){
+var first = Number(document.theForm.elements[0].value);
+var second = Number(document.theForm.elements[1].value);
+var difference = first - second;
+document.getElementById("theForm").innerHTML ="The answer is   difference  " for subtraction"; 
+}
+
+function getmultiplication(){
+var first = Number(document.theForm.elements[0].value);
+var second = Number(document.theForm.elements[1].value);
+var multiplication = first + second;
+document.getElementById("answer").innerHTML ="The answer is " + multiplication + " for multiplication";
+}
+    
+function getdivision(){
+var first = Number(document.theForm.elements[0].value);
+var second = Number(document.theForm.elements[1].value);
+var division = first/second;
+document.getElementById("answer").innerHTML = "The answer is " + division + " for division";
+}
+
+    
+    
+</script>
+</head>
+<body>
+<form name="theForm">
+<br>Enter a number in each box.<br>
+<input type="text"><br>
+<input type="text"><br>
+<input type="button" value=Sum: onClick="getSum()">
+<input type="button" value="Difference:" onClick="getDifference()">
+<input type="button" value="Multiplication:" onClick="getmultiplication()">
+<input type="button" value="Division:" onClick="getdivision()">
+<p id = "answer" ></p>
+</form>
+</body>
+<html
